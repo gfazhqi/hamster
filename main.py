@@ -667,7 +667,7 @@ def main():
         else:
             print(Fore.RED + Style.BRIGHT + f"Error with status code: {response.status_code}")
             token = None  # Set token ke None jika terjadi error lain
-            
+            for i in range(1800, 0, -1):
         time.sleep(1)
 
 
