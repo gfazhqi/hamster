@@ -667,7 +667,10 @@ def main():
         else:
             print(Fore.RED + Style.BRIGHT + f"Error with status code: {response.status_code}")
             token = None  # Set token ke None jika terjadi error lain
-            for i in range(1800, 0, -1):
+            print(f"{Fore.CYAN+Style.BRIGHT}==============Semua akun telah diproses=================")
+            for i in range(300, 0, -1):
+                sys.stdout.write(f"\rMemproses ulang semua akun dalam {i} detik...")
+                sys.stdout.flush()
         time.sleep(1)
 
 
